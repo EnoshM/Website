@@ -1,0 +1,19 @@
+from JES import*
+#Finn Pachter @FinnP2
+
+#This *SHOULD* Add a face under a short definition
+
+def addFace(filename):
+  myPic = makePicture(filename)
+  print(getWidth(myPic))
+  print(getHeight(myPic))
+  
+  addOvalFilled(myPic,50,60,30,50,black)
+  addOvalFilled(myPic,60,70,10,20,white)
+  addOvalFilled(myPic,120,60,30,50,black)
+  addOvalFilled(myPic,130,70,10,20,white)
+  addArcFilled(myPic,70,120,60,40,180,180,red)
+  addArcFilled(myPic,80,130,40,20,180,180,white)
+  writePictureTo(myPic,"output.jpg")
+
+addFace("emojiGirl.jpg")
