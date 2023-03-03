@@ -1,7 +1,7 @@
 import math
 
 print("Enter the values for a, b, and c respectively:")
-print()
+print() 
 a = int(input())
 b = int(input())
 b = abs(b)
